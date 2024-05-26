@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <fieldset>
+        <legend>Login Details</legend>
+        <form method="post" enctype="multipart/form-data">
+        <label for="name">Username:</label>
+        <p><input type="text" name="username" placeholder="Enter your username" size="9" maxlength="5"></p>
+        <label for="password">Password:</label>
+        <p><input type="password" name="password" placeholder="Enter your username" size="9" maxlength="5"></p>
+        <label>Gender:</label><br>
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female
+        <label>Comments:</label>
+        <p><textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comments"></textarea>
+        </p>
+        <p><input type="submit" name="login-button" value="Send"></p>
+
+        <p>I want to learn</p>
+        <input type="checkbox" name="hobbies[]" value="html">HTML
+        <input type="checkbox" name="hobbies[]" value="css">CSS
+        <input type="checkbox" name="hobbies[]" value="java">JAVA
+        <input type="checkbox" name="hobbies[]" value="C#">C#<br>
+
+        <!--select tag for birthday dates-->
+        <label for="dob">Select Your Birthday Date</label><br>
+        <select name="dob">
+            <option value="">Select date</option><br>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select>
+        <!--For uploading file-->
+        <p>Your Resume:</p>
+        <input type="file" name="resume">
+    </fieldset><br>
+        <fieldset>
+            <legend>Educational Details</legend>
+            <p>
+                <label for="email_id">Email:</label>
+                <input name="email" name="email_id" id="email_id">
+            </p>
+            <p>
+                <label for="url">LinkedIn Url</label>
+                <input type="url" name="LinkedIn-url" id="LinkedIn-url">
+            </p>
+            <p>
+                <label for="Time">Joining Time</label>
+                <input type="time" name="time" id="time">
+            </p>
+            <p>
+                <label for="search">Search Course</label>
+                <input type="search" name="search" id="search">
+            </p>
+            
+        </fieldset>
+        <p>
+            <input type="submit" name="login-button" value="Login">
+        </p>
+    </form>
+</body>
+</html>
